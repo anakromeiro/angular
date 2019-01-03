@@ -7,20 +7,21 @@ import { FirstComponent } from './first-component/first.component';
 import { SecondComponentComponent } from './second-component/second-component.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { DoMathModule } from './do-math/do-math.module';
+import { CursosService } from './cursos/cursos.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponentComponent,
-    CursosComponent
+    CursosComponent //Este é um módulo. Foi criado como nome errado?
   ],
   imports: [
     BrowserModule,
     DoMathModule
   ],
   //Aqui dentro ficam os serviços
-  providers: [],
+  providers: [CursosService],
   //Somente no módulo raiz. É o componente que será instanciado
   bootstrap: [AppComponent]
 })
