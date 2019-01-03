@@ -1,3 +1,7 @@
 <p>
-  cursos (meu componente) works!
+  Bem vindo ao Portal de Cursos {{nomePortal}}
 </p>
+Cursos disponíveis:
+<ul>
+  <li *ngFor="let curso of cursos">{{curso}}</li>
+</ul>

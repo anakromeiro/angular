@@ -5,6 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './second-component.component.html',
   styleUrls: ['./second-component.component.css']
 })
-export class SecondComponentComponent { 
-
-}
+export class SecondComponentComponent {}
